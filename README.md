@@ -1,6 +1,6 @@
 # jscontext
 
-[![Known Vulnerabilities](https://snyk.io/test/github/fncolon/jscontext/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fncolon/jscontext?targetFile=package.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/fzn0x/jscontext/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fzn0x/jscontext?targetFile=package.json)
 [![npm stable version](https://img.shields.io/npm/v/node-jscontext.svg?logo=npm)](https://npmjs.com/package/node-jscontext)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -27,8 +27,8 @@ Basic example :
 const { context } = require("../index.js");
 
 const ctx = context();
-ctx.set("Hello", "world"); 
-ctx.setWithTimeout("Hello2", Promise.resolve('world2')); // avoid memory leaks for promise value
+ctx.set("Hello", "world");
+ctx.setWithTimeout("Hello2", Promise.resolve("world2")); // avoid memory leaks for promise value
 
 console.log(ctx.get("Hello")); // world
 console.log(context().get("Hello")); // world
