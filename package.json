@@ -1,6 +1,6 @@
 {
   "name": "node-jscontext",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Comprehensive way to making context for your application e.g for express request handling and share between application layers",
   "main": "index.js",
   "scripts": {
