@@ -16,9 +16,26 @@ function context() {
     }
   }
 
+  function invokedMultiSet(data = {}) {
+    if (namespace && namespace.active) {
+      // Convert @data to Array
+      const setData = Object.keys(data);
+
+      setData.forEach((key, index) => {
+        namespace.set(key, data[key]);
+      });
+    }
+  }
+
   function invokedGet(key) {
     if (namespace && namespace.active) {
       return namespace.get(key);
+    }
+  }
+
+  function invokedGetCallback(key, fn) {
+    if (namespace && namespace.active) {
+      return fn(namespace.get(key));
     }
   }
 
@@ -40,10 +57,12 @@ function context() {
   namespace.active = newContext;
 
   const set = namespace.bind(invokedSet, newContext);
+  const multiSet = namespace.bind(invokedMultiSet, newContext);
   const get = namespace.bind(invokedGet, newContext);
+  const getCallback = namespace.bind(invokedGetCallback, newContext);
   const setWithTimeout = namespace.bind(invokedSetWithTimeout, newContext);
 
-  return { set, get, setWithTimeout, namespace };
+  return { set, get, setWithTimeout, getCallback, multiSet, namespace };
 }
 
 /**

@@ -15,6 +15,10 @@ type ContextReturn = {
   get: Function;
   // clsBind binded function to set value from continuation local storage by key with timeout.
   setWithTimeout: Function;
+  // clsBind binded function to get value from continuation local storage by key and return as a function
+  getCallback: Function;
+  // clsBind binded function to set value from continuation local storage by object data
+  multiSet: Function;
   // gets the continuation namespace data
   namespace: Namespace;
 };

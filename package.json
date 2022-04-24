@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fncolon/jscontext.git"
+    "url": "git+https://github.com/fzn0x/jscontext.git"
   },
   "keywords": [
     "Context for request-scoped handling",
@@ -17,12 +17,12 @@
     "Application context for NodeJS",
     "Express context middleware"
   ],
-  "author": "fncolon <Muhammad Fauzan>",
+  "author": "fzn0x <Muhammad Fauzan>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fncolon/jscontext/issues"
+    "url": "https://github.com/fzn0x/jscontext/issues"
   },
-  "homepage": "https://github.com/fncolon/jscontext#readme",
+  "homepage": "https://github.com/fzn0x/jscontext#readme",
   "dependencies": {
     "@types/cls-hooked": "^4.3.3",
     "@types/express": "^4.17.13",
