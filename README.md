@@ -36,7 +36,7 @@ console.log(ctx.get("Hello2")); // Promise { 'world2' }
 console.log(context().get("Hello2")); // Promise { 'world2' }
 ```
 
-[Example using expressjs](./examples/express/README.md)
+[Example using expressjs](./examples/express)
 
 ## API
 
